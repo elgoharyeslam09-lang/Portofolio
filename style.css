@@ -444,3 +444,79 @@ body {
     color: var(--text-muted);
     font-size: 14px;
 }
+@media screen and (max-width: 768px) {
+    .app-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-sidebar {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        position: relative;
+        top: 0;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        flex-direction: column;
+    }
+
+    .left-sidebar .profile-header {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .left-sidebar .img-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .left-sidebar .personal-info,
+    .left-sidebar .skills {
+        display: none;
+    }
+
+    .left-sidebar .download-cv-btn {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-top: 0;
+        padding: 20px;
+    }
+
+    .hero-banner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-banner .hero-image img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .right-navbar {
+        display: none;
+    }
+
+    .education-details .container {
+        padding: 20px;
+    }
+
+    .education-item h3 {
+        font-size: 1.5rem;
+    }
+}
